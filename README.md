@@ -1,4 +1,4 @@
-# graduation project ***Horous***
+# Graduation project ***Horous***
 
 
 # Commits
