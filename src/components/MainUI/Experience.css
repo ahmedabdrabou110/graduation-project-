@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    margin-left: 50px;
 }
 
 .experience__container .experience_content {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 .experience__container .experience_content h1 {
@@ -34,8 +34,6 @@
 .experience__container .experiences {
     display: flex;
     flex-direction: row;
-    margin-left: 1vw;
-    margin-right: 1vw;
     overflow-y: hidden;
     overflow-x: scroll;
 }

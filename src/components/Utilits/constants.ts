@@ -16,14 +16,14 @@ export interface experienceTypes {
 export const BottomLinks:types[] = [
     {
         src:"/assets/Bank.svg" ,
-        title:"Bank"
+        title:"Museum"
     } , 
     {
         src:"/assets/Hotel.svg",
         title:"Hotel"
     } ,
     {
-        src:"/assets/restaurant.svg" ,
+        src:"/assets/Restaurant.svg" ,
         title:"Restaurant"
     } ,
     {

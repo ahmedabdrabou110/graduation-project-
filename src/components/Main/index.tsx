@@ -12,14 +12,16 @@ const Index = () => {
   return (
     <div>
       <div className='container'>
-      <Navbar />
-      <div className="content">
-        <h1>Enjoy Your Vacation With Us</h1>
-      </div>
-      <SearchBar />
-      <BottomNavbar />
+        <div className="layout"></div>
+        <Navbar />
+        <div className="content">
+          <h1>Enjoy Your Vacation With Us</h1>
+        </div>
+        <SearchBar />
+        <BottomNavbar />
     </div>
     <div className='event'>
+      <div className="layout"></div>
       <EventMain  />
     </div>
     <div className="destination">

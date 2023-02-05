@@ -34,7 +34,7 @@ const Navbar = () => {
                 Reviews
             </NavLink>
             <NavLink to="Account">
-                Account
+                Sign in
             </NavLink>
         </nav>
     </section>

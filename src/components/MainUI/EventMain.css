@@ -5,14 +5,24 @@
     height: 100vh;
 }
 
+.event__main .layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 22.88%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
+}
+
 .event__main .content {
-    padding-left: 80px;
-    padding-top: 100px;
+    padding-left: 45px;
+    padding-top: 70px;
     margin: 30px;
 }
 
 .event__main .content .event__header h1 {
-    font-size: 80px;
+    font-size: 64px;
     font-weight: bolder;
     margin-bottom: 20px;
 }
@@ -22,5 +32,6 @@
     font-weight: bolder;
     margin-bottom: 30px;
     line-height: 48px;
+    font-weight: 500;
     overflow: hidden;
 }
