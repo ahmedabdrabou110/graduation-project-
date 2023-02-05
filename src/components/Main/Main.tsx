@@ -1,5 +1,6 @@
 import React , {useState , useEffect} from 'react'
 import { Splash } from '../Splash/Splash'
+import Index from './index';
 
 const Main = () => {
     const [loading , setLoading] = useState<boolean>(false);
@@ -12,7 +13,7 @@ const Main = () => {
     },[])
     return (
         <div>
-            {loading ? <Splash /> : "Main"}
+            {loading ? <Splash /> : <Index />}
         </div>
     )
 }

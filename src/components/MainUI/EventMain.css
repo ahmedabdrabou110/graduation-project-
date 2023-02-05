@@ -1,0 +1,26 @@
+.event__main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.event__main .content {
+    padding-left: 80px;
+    padding-top: 100px;
+    margin: 30px;
+}
+
+.event__main .content .event__header h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.event__main .content .event_paragraph p {
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    line-height: 48px;
+    overflow: hidden;
+}

@@ -18,7 +18,7 @@
 .splash h1 {
     letter-spacing: 10px;
     animation: letter 2s ease-in-out;
-    color: #DEB671;
+    color: #FF9D55;
 }
 
 @keyframes fadeLogo {
