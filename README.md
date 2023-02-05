@@ -6,7 +6,7 @@
 [Live Preview of first commit](https://vg7bfu.csb.app/)
 
 > Second Commit about main |index page 
-[Live Preview of Second commit](https://phenomenal-baklava-678ab8.netlify.app)
+[Live Preview of Second commit](https://imaginative-capybara-090feb.netlify.app/)
 
 
 
