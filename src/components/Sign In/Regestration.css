@@ -1,0 +1,80 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 96px;
+
+    position: absolute;
+    width: 700px;
+    height: 700px;
+
+    /* White/500 */
+
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.signin__container .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 402px;
+    height: 194px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.signin__container .title img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+
+
+.signin__container .title h1 {
+    width: 402px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 72px;
+    position: absolute;
+    top: 120px;
+    left: 42px;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.signin__container .regestration__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    overflow-y: hidden;
+}

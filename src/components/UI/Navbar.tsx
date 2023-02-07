@@ -1,6 +1,9 @@
 import React, { CSSProperties } from 'react'
-import {NavLink} from "react-router-dom" ;
+import {NavLink, Route, Routes} from "react-router-dom" ;
 import "./Navbar.css"
+import Main from '../Main/Main';
+import Index from '../Main';
+import SignIn from '../Sign In/SignIn';
 interface propTypes {
     isActive:boolean
 }
@@ -33,10 +36,11 @@ const Navbar = () => {
             <NavLink to="Reviews">
                 Reviews
             </NavLink>
-            <NavLink to="Account">
+            <NavLink to="/SignIn">
                 Sign in
             </NavLink>
         </nav>
+        
     </section>
   )
 }

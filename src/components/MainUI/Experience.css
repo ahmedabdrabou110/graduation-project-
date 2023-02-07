@@ -36,4 +36,5 @@
     flex-direction: row;
     overflow-y: hidden;
     overflow-x: scroll;
+    margin-top: 48px;
 }

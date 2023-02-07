@@ -1,0 +1,68 @@
+.regestraion_button {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 23px 169px;
+    margin-bottom: 48px;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    margin-left: 50px;
+    height: 94px;
+    border: 3px solid #333333;
+    border-radius: 45px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+    transition: hover 2s ease;
+}
+
+
+
+.regestraion_button h1 {
+    width: 350px;
+    height: 48px;
+
+    /* Header 2/regular */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.regestraion_button img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 40px;
+    top: 23px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.regestraion_button:hover {
+    background-color: #FF9D55;
+    color: white;
+}

@@ -108,3 +108,19 @@ export const experiences:experienceTypes[] = [
         titleBtn:"BEST SELLER"
     }
 ]
+
+
+export const regestrationInfo:types[] = [
+    {
+        src:"/assets/Google.svg" , 
+        title:"Gmail"
+    },
+    {
+        src:"/assets/FacebookLogin.svg" , 
+        title:"Facebook"
+    },
+    {
+        src:"/assets/Email.svg" , 
+        title:"Email"
+    },
+]
