@@ -1,36 +1,41 @@
-.regestraion_button {
+button.regestration_button {
     display: flex;
-    text-align: center;
     flex-direction: row;
     align-items: center;
     padding: 23px 169px;
-    margin-bottom: 48px;
-    overflow: hidden;
-    position: relative;
-    width: 600px;
-    margin-left: 50px;
+    gap: 8px;
+    isolation: isolate;
+
+    width: 663px;
     height: 94px;
+
+    /* Black/600 */
+
     border: 3px solid #333333;
     border-radius: 45px;
+
+    /* Inside auto layout */
+
     flex: none;
     order: 0;
     flex-grow: 0;
+    position: relative;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
     cursor: pointer;
-    transition: hover 2s ease;
+    font-size: 24px;
+    transition: hover 0.5s linear;
 }
 
-
-
-.regestraion_button h1 {
-    width: 350px;
-    height: 48px;
-
-    /* Header 2/regular */
-
+button.regestration_button h3 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 48px;
     /* identical to box height */
 
@@ -46,7 +51,12 @@
     z-index: 0;
 }
 
-.regestraion_button img {
+
+button.regestration_button h3.facebook {
+    margin-left: 60px;
+}
+
+button.regestration_button img {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -60,9 +70,4 @@
     order: 1;
     flex-grow: 0;
     z-index: 1;
-}
-
-.regestraion_button:hover {
-    background-color: #FF9D55;
-    color: white;
 }

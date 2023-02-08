@@ -1,8 +1,11 @@
 import React , {useState , useEffect} from 'react'
 import { Splash } from '../Splash/Splash'
 import Index from './index';
+export interface Show {
+    showModal:()=>void
+}
 
-const Main = () => {
+const Main = ({showModal} :Show ) => {
     const [loading , setLoading] = useState<boolean>(false);
 
     useEffect(()=>{
@@ -13,7 +16,7 @@ const Main = () => {
     },[])
     return (
         <div>
-            {loading ? <Splash /> : <Index />}
+            {loading ? <Splash /> : <Index showModal={showModal} />}
         </div>
     )
 }

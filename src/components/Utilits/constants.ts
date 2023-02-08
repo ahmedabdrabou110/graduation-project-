@@ -116,7 +116,7 @@ export const regestrationInfo:types[] = [
         title:"Gmail"
     },
     {
-        src:"/assets/FacebookLogin.svg" , 
+        src:"/assets/FacebookLogin.svg", 
         title:"Facebook"
     },
     {

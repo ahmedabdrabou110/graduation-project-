@@ -7,13 +7,14 @@ import EventMain from '../MainUI/EventMain'
 import Destinations from '../MainUI/Destinations'
 import Experience from '../MainUI/Experience'
 import Footer from '../MainUI/Footer'
+import { Show } from './Main'
 
-const Index = () => {
+const Index = ({showModal}:Show) => {
   return (
     <div>
       <div className='container'>
         <div className="layout"></div>
-        <Navbar />
+        <Navbar showModal ={showModal} />
         <div className="content">
           <h1>Enjoy Your Vacation With Us</h1>
         </div>

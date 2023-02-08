@@ -3,12 +3,12 @@ import {NavLink, Route, Routes} from "react-router-dom" ;
 import "./Navbar.css"
 import Main from '../Main/Main';
 import Index from '../Main';
-import SignIn from '../Sign In/SignIn';
+import { Show } from '../Main/Main';
 interface propTypes {
     isActive:boolean
 }
 
-const Navbar = () => {
+const Navbar = ({showModal} : Show) => {
     
     const NavLinkStyle = ({isActive}:propTypes):CSSProperties =>{
         return {
@@ -36,8 +36,9 @@ const Navbar = () => {
             <NavLink to="Reviews">
                 Reviews
             </NavLink>
-            <NavLink to="/SignIn">
-                Sign in
+           
+            <NavLink to="#" onClick={showModal}>
+               sign in
             </NavLink>
         </nav>
         

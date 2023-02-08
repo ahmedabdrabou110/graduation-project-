@@ -6,7 +6,7 @@ interface types {
 }
 const BottomNavbarLink = (props:types) => {
   return (
-    <button>
+    <button className='navbottom_button'>
       <img src={props.src} alt ={props.title} />
       {props.title}
     </button>

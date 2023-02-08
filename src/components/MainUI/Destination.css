@@ -1,6 +1,6 @@
 .destination__group__container {
     background-color: white;
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
     min-width: 400px;
     max-height: 400px;
     overflow-y: hidden;
