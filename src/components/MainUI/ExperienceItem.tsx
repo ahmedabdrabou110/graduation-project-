@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ExperienceItem.css"
-import { experienceTypes } from '../Utilits/constants';
+import { experienceTypes } from '../UI/Utilits/constants';
 const ExperienceItem = (props:experienceTypes) => {
   return (
     <div className='experience__item'>

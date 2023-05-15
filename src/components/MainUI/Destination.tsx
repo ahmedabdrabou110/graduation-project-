@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Destination.css"
-import { types } from '../Utilits/constants';
+import { types } from '../UI/Utilits/constants';
 const Destination = ({src , title}:types) => {
   return (
     <div className='destination__group__container'>

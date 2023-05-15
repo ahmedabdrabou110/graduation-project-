@@ -5,7 +5,7 @@ export interface Show {
     showModal:()=>void
 }
 
-const Main = ({showModal} :Show ) => {
+const Main = ( ) => {
     const [loading , setLoading] = useState<boolean>(false);
 
     useEffect(()=>{
@@ -16,7 +16,7 @@ const Main = ({showModal} :Show ) => {
     },[])
     return (
         <div>
-            {loading ? <Splash /> : <Index showModal={showModal} />}
+            {loading ? <Splash /> : <Index  />}
         </div>
     )
 }

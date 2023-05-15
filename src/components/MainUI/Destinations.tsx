@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Destinations.css"
 import Destination from './Destination';
-import { destination } from '../Utilits/constants';
+import { destination } from '../UI/Utilits/constants';
 const Destinations = () => {
   return (
     <div className='destinations__container'>

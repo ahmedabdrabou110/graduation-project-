@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Experience.css"
 import ExperienceItem from './ExperienceItem'
-import { experiences } from '../Utilits/constants'
+import { experiences } from '../UI/Utilits/constants'
 const Experience = () => {
   return (
     <div className='experience__container'>

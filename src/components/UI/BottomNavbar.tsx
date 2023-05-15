@@ -1,6 +1,6 @@
 import React from 'react'
 import "./BottonNavbar.css"
-import { BottomLinks  } from '../Utilits/constants'
+import { BottomLinks  } from './Utilits/constants'
 import BottomNavbarLink from './BottomNavbarLink'
 const BottomNavbar = () => {
   return (

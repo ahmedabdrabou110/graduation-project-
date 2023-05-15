@@ -1,45 +1,67 @@
-import React, { CSSProperties } from 'react'
-import {NavLink, Route, Routes} from "react-router-dom" ;
+import React, { CSSProperties , useContext} from 'react'
+import {NavLink} from "react-router-dom" ;
 import "./Navbar.css"
-import Main from '../Main/Main';
-import Index from '../Main';
-import { Show } from '../Main/Main';
-interface propTypes {
+import { AccountContext } from '../store/ShowAccountContext';
+// import { ModelContext } from '../store/ShowModelContext';
+
+
+export interface propTypes {
     isActive:boolean
 }
 
-const Navbar = ({showModal} : Show) => {
+const Navbar = () => {
     
     const NavLinkStyle = ({isActive}:propTypes):CSSProperties =>{
         return {
             fontWeight:isActive ? "bolder" : "normal" ,
-            backgroundColor:isActive? "#FF9D55" : "transparent"
+            backgroundColor:isActive? "#FF9D55" : "transparent" , 
+
         }
     }
+
+    // const modalCtx= useContext(ModelContext);
+    const profileCtx = useContext(AccountContext);
     
+
+    const closeHandle = (event: { preventDefault: () => void; }) => {
+        event.preventDefault();
+        profileCtx.showAccount();
+    }
+
   return (
+
+
     <section className='navbar-container'>
         <NavLink className="logo" to="/">
             <img src="/assets/Logo.svg" alt="Logo" />
             <h1>HoRus</h1>
         </NavLink>
         <nav className="links">
-            <NavLink style={NavLinkStyle}  to="/">
+            <NavLink style={NavLinkStyle}  to="/home">
                 Home
             </NavLink>
-            <NavLink to="Trips">
+            <NavLink style={NavLinkStyle} to="/trips">
                 Trips
             </NavLink>
-            <NavLink to="Alter">
-                Alter
+            <NavLink style={NavLinkStyle} to="/alters">
+                Alters
             </NavLink>
-            <NavLink to="Reviews">
+            <NavLink style={NavLinkStyle} to="/community">
+                Community
+            </NavLink>
+            <NavLink style={NavLinkStyle} to="/reviews">
                 Reviews
             </NavLink>
            
-            <NavLink to="#" onClick={showModal}>
+            {/* <NavLink style={NavLinkStyle} to="#" onClick={modalCtx.showModel}>
                sign in
+            </NavLink> */}
+
+            <NavLink style={NavLinkStyle}  to="/account" onClick={closeHandle}>
+                Account
             </NavLink>
+
+           
         </nav>
         
     </section>

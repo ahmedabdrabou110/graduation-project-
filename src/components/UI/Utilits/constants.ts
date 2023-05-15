@@ -4,6 +4,13 @@ export interface types {
 }
 
 
+export interface nearbestTypes {
+    src:string ,
+    title:string,
+    link:string   
+}
+
+
 export interface experienceTypes {
     src:string,
     likely:boolean ,
@@ -123,4 +130,83 @@ export const regestrationInfo:types[] = [
         src:"/assets/Email.svg" , 
         title:"Email"
     },
+]
+
+
+
+export const shareTravelItems:types[] = [
+    {
+        src:"/assets/Camera.svg" ,
+        title:"Post photo"
+    },
+    {
+        src:"/assets/Video.svg" ,
+        title:"Post video"
+    },
+    {
+        src:"/assets/Pen.svg" ,
+        title:"Write review"
+    }
+]
+
+export const addInfo :types[] = [
+
+    {
+        src:"/assets/Plus.svg",
+        title:"Add your current city",
+    },
+
+    {
+        src:"/assets/Plus.svg",
+        title:"Add a website",
+    },
+    {
+        src:"/assets/Plus.svg",
+        title:"Write about yourself",
+    },
+    
+]
+
+
+export const nearBest : nearbestTypes[] = [ 
+    {
+        src:"/assets/Best.svg",
+        title:"Nearby",
+        link:"nearby",
+    } , 
+    {
+        src:"/assets/Best.svg",
+        title:"6 Best Places to visit",
+        link:"best-places"
+    }
+]
+
+
+
+export const popularPlaces : types[] = [
+    {
+        src:"/assets/Vallyoftheking.svg",
+        title:"1-Vally of the King"
+    },
+    {
+        src:"/assets/Vally.svg",
+        title:"2-Vally of the King"
+    },
+    {
+        src:"/assets/TemplateOfLuxor.svg",
+        title:"3-Temple of Luxor"
+    },
+    {
+        src:"/assets/TemplateOfAmun.svg",
+        title:"4-Temples of Amun"
+    },
+    {
+        src:"/assets/TemplateOfRamsses.svg",
+        title:"5-Temple of Ramsses"
+    },
+    {
+        src:"/assets/TemplateOfIsis.svg",
+        title:"6-Temple of Isis"
+    },
+
 ]

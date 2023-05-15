@@ -1,7 +1,7 @@
 import React from 'react'
 import "./SignIn.css";
 import RegestraionButton from './RegestraionButton';
-import { regestrationInfo } from '../Utilits/constants';
+import { regestrationInfo } from '../UI/Utilits/constants';
 const SignIn = () => {
   return (
     <>

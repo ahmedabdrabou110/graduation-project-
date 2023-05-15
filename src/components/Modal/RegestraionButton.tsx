@@ -1,6 +1,6 @@
 import React from 'react'
 import "./RegestrationButton.css"
-import { types } from '../Utilits/constants'
+import { types } from '../UI/Utilits/constants'
 const RegestraionButton = ({src , title}:types) => {
   return (
     <>

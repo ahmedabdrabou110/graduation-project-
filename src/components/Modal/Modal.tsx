@@ -1,50 +1,37 @@
-import React  from 'react'
+import React  , {useContext} from 'react'
 import "./Modal.css"
 import SignIn from './SignIn'
 import ReactDOM from 'react-dom'
-import { Show } from '../Main/Main';
-
-interface modalTypes {
-    showModal : (x:boolean) => void , 
-    closeModal : (y:boolean) => void
-}
-
-interface closeModal {
-    close: () => void
-}
+import { ModelContext } from '../store/ShowModelContext';
 
 
 
-const Backdrop = ({close}:closeModal) => {
+const Backdrop = () => {
+    const modalCtx = useContext(ModelContext);
     return (
-        <div onClick={close} className="backdrop"></div>
-    )
-}
-
-const Overlay = ({close}:closeModal) => {
-    return(
-        <div className="overlay">
+        <div  className="backdrop" onClick={modalCtx.closeModel}></div>
+        )
+    }
+    
+    const Overlay = () => {
+        const modalCtx = useContext(ModelContext);
+        return(
+            <div className="overlay">
             <SignIn />
-            <div className="close" onClick={close}>x</div>
+            <div className="close" onClick={modalCtx.closeModel}>x</div>
         </div>
     )
 }
 
-const Modal = ({showModal , closeModal}:modalTypes) => {
-        const show =() => {
-            showModal(true)
-        }
-
-        const close =() => {
-            closeModal(false)
-        }
+const Modal = () => {
+        
 
       return (
     <React.Fragment>
         {
             ReactDOM.createPortal(<React.Fragment>
-                <Backdrop close={close}  />
-                <Overlay close={close} />
+                <Backdrop   />
+                <Overlay  />
             </React.Fragment> , 
             document.getElementById("modal") as HTMLElement
             )
