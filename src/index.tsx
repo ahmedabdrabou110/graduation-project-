@@ -8,6 +8,7 @@ import AccountContextProvider from "./components/store/ShowAccountContext";
 import ShowSearchContext from "./components/store/ShowSearchContext";
 import CreateTripProvider from "./components/store/ShowCreateTrip";
 import CreatePlanProvider from "./components/store/ShowPlanContext";
+import AuthContextProvider from "./components/store/AuthContextProvider";
 const container = document.getElementById("root") as HTMLElement ;
 
 const root = createRoot(container) ;
@@ -19,7 +20,11 @@ root.render(
 <AccountContextProvider>
     <ModalContextProvider>
     
-        <BrowserRouter><App /></BrowserRouter>
+        <BrowserRouter>
+         <AuthContextProvider>
+            <App />
+         </AuthContextProvider>
+        </BrowserRouter>
     
 </ModalContextProvider>
 </AccountContextProvider>

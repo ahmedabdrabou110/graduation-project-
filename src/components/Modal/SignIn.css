@@ -8,12 +8,7 @@
     width: 402px;
     height: 194px;
 
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    
 }
 
 .logo_container img {
@@ -60,10 +55,4 @@
     width: 663px;
     height: 378px;
 
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }

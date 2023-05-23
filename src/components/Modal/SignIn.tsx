@@ -3,6 +3,7 @@ import "./SignIn.css";
 import RegestraionButton from './RegestraionButton';
 import { regestrationInfo } from '../UI/Utilits/constants';
 const SignIn = () => {
+   
   return (
     <>
         <div className="logo_container">
@@ -12,8 +13,9 @@ const SignIn = () => {
         <div className="regestration">
             {
                 regestrationInfo.map(item => (
-                    <RegestraionButton key={item.src} src={item.src} title={item.title} />
+                    <RegestraionButton key={item.src} src={item.src} title={item.title}  />
                 ))
+                
             }
         </div>
     </>

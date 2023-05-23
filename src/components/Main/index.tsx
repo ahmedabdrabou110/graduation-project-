@@ -35,7 +35,7 @@ const Index = () => {
     <div className="experience">
       <Experience />
     </div>
-    <footer>
+    <footer className='footer_main'>
       <Footer />
     </footer>
     </div>

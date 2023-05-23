@@ -1,4 +1,4 @@
-import React, { useContext }  from 'react'
+import React, { useContext, useEffect }  from 'react'
 import Main from './components/Main/Main'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { ModelContext } from './components/store/ShowModelContext';
@@ -36,8 +36,19 @@ import Museum from './components/Categories/Museum';
 import Pyramids from './components/Categories/Pyramids';
 import Hotels from './components/Categories/Hotels';
 import Resturant from './components/Categories/Resturant';
+import Bank from './components/Categories/Bank';
+import Hospital from './components/Categories/Hospital';
+import Antiques from './components/Categories/Antiques';
+import Modal from './components/Modal/Modal';
 
 const App = () => {
+   
+
+  useEffect(()=>{
+    fetch("0338-197-61-78-235.ngrok-free.app").then(response => response.json()).then(result => console.log(result)).catch(error => console.log(error));
+
+  },[])
+
   const modelCtx = useContext(ModelContext);
   const profileCtx = useContext(AccountContext);
   const seachCtx = useContext(SearchContext);
@@ -86,14 +97,22 @@ const App = () => {
         <Route path="home/pyramids" element={<Pyramids />} />
         <Route path="home/hotels" element={<Hotels />} />
         <Route path="home/resturant" element={<Resturant />} />
+        <Route path="home/bank" element={<Bank />} />
+        <Route path="home/hospital" element={<Hospital />} />
+        <Route path="home/antiques" element={<Antiques />} />
       
     </Routes>
-    {
+    {/* {
       modelCtx.model && (<ProfileInfo />)
-    }
+    } */}
 
     {
       profileCtx.show && (<Profile />)
+    }
+
+
+    {
+      modelCtx.model && <Modal />
     }
 
     {
@@ -108,7 +127,9 @@ const App = () => {
   {
     planCtx.show && <PlanInfo />
   }
-    
+
+  
+
     </>
   )
 }

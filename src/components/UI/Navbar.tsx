@@ -2,6 +2,7 @@ import React, { CSSProperties , useContext} from 'react'
 import {NavLink} from "react-router-dom" ;
 import "./Navbar.css"
 import { AccountContext } from '../store/ShowAccountContext';
+import { ModelContext } from '../store/ShowModelContext';
 // import { ModelContext } from '../store/ShowModelContext';
 
 
@@ -19,7 +20,7 @@ const Navbar = () => {
         }
     }
 
-    // const modalCtx= useContext(ModelContext);
+    const modalCtx= useContext(ModelContext);
     const profileCtx = useContext(AccountContext);
     
 
@@ -53,13 +54,13 @@ const Navbar = () => {
                 Reviews
             </NavLink>
            
-            {/* <NavLink style={NavLinkStyle} to="#" onClick={modalCtx.showModel}>
+            <NavLink style={NavLinkStyle} to="#" onClick={modalCtx.showModel}>
                sign in
-            </NavLink> */}
-
-            <NavLink style={NavLinkStyle}  to="/account" onClick={closeHandle}>
-                Account
             </NavLink>
+
+            {/* <NavLink style={NavLinkStyle}  to="/account" onClick={closeHandle}>
+                Account
+            </NavLink> */}
 
            
         </nav>

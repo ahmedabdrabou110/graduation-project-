@@ -446,7 +446,7 @@
 
 .museum_container footer.footer {
     position: absolute;
-    top: 4950px;
+    
 }
 
 .museum_container .popular_places_continer {
@@ -581,3 +581,37 @@
     position: absolute;
     top: 450px;
 }
+
+.footer_bank {
+    position: absolute;
+    top:2300px !important;
+}
+
+div.bank {
+    position: relative;
+    height: 1500px !important;
+}
+
+.bank .museum_content {
+    height: 1500px !important;
+}
+.bank .museum_content .details_info {
+    height: fit-content;
+}
+
+.info p {
+    
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        /* identical to box height */
+    
+    
+        /* Black/400 */
+    
+        color: #858585;
+}
+
